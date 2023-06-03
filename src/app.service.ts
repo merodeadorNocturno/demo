@@ -9,4 +9,8 @@ export class AppService {
   getUsers(): string {
     return 'All Users';
   }
+
+  getClassrooms(): string {
+    return 'All Classrooms';
+  }
 }
