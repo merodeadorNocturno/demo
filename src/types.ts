@@ -1,4 +1,5 @@
 export interface Users {
+  id: string;
   name: string;
   lastName: string;
   userName: string;
@@ -7,5 +8,11 @@ export interface Users {
   deleted: boolean;
   addres?: string;
   phone?: string;
+  description?: string;
+}
+
+export interface Classrooms {
+  id: string;
+  name: string;
   description?: string;
 }

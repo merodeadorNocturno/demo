@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Users } from './types';
+import { Classrooms, Users } from './types';
 
 @Injectable()
 export class AppService {
@@ -9,6 +9,7 @@ export class AppService {
 
   getUsers(): Users {
     return {
+      id: '1e67cfc8-8486-45be-aed3-e3f13c4c8433',
       name: 'M',
       lastName: 'Arroyo',
       userName: 'm11arroyo',
@@ -18,7 +19,11 @@ export class AppService {
     };
   }
 
-  getClassrooms(): string {
-    return 'All Classrooms';
+  getClassrooms(): Classrooms {
+    return {
+      id: '83171278-d973-461c-a663-782c202cf264',
+      name: 'Casio',
+      description: 'Celvanio 470BK',
+    };
   }
 }
