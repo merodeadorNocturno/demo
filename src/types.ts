@@ -1,3 +1,10 @@
+export enum Gender {
+  Male = 'male',
+  Female = 'female',
+  NonBinary = 'non-binary',
+  Transgender = 'transgender',
+}
+
 export interface Users {
   id: string;
   name: string;
@@ -6,6 +13,7 @@ export interface Users {
   age: number;
   email: string;
   deleted: boolean;
+  gender: Gender;
   addres?: string;
   phone?: string;
   description?: string;

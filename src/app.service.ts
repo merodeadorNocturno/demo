@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Classrooms, Users } from './types';
+import { Classrooms, Users, Gender } from './types';
 
 @Injectable()
 export class AppService {
@@ -16,6 +16,7 @@ export class AppService {
       age: 18,
       email: 'm11_arroyo@gmail.com',
       deleted: false,
+      gender: Gender.Female,
     };
   }
 
